@@ -1,0 +1,2 @@
+This is the first project presented by The Odin Project in the Web Developer 101 track. (http://www.theodinproject.com/courses/web-development-101/lessons/html-css)
+We are to recreate Google's homepage by deconstructing it and rebuilding it through the developer tools in our browser of choice.
