@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Google</title>
+    </head>
+    <body>
+        <style>
+            #top-nav{
+                list-style-type: none;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+                font-family: Arial, Helvetica;
+                font-size: 13px;
+            }
+            li{
+                float: left;
+            }
+            li a {
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 15px 15px;
+                text-decoration: none;
+            }
+            #sign_in{
+                float:right;            
+            }
+            #sign_in a{
+                margin:12px 30px 0px 0px; 
+                padding:0px 12px 0px 12px;
+                line-height: 28px;
+                border: 1px solid#4285f4;
+                background-color:#4285f4;
+                border-radius: 2px;
+                text-align: center;
+                color:white; 
+                font-weight:bold;
+            }
+            li:hover{
+                text-decoration: underline;
+            }
+
+            /*Google logo*/
+            #logo{
+                display: block;
+                margin: 156px auto 20px auto;
+            }
+            /*Element to contain the search bar and buttons */
+            .search_form{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            /*Outer container for search bar*/
+            .search_box{
+                position: relative;
+                margin: 20px auto;
+            }
+            /*Styling for search bar. Padding left will house the magnifying glass.*/
+            .search_box input[type="text"]{
+                padding-left: 60px;
+                width: 517px;
+                height: 40px;
+                border: 1px solid #dfe1e5;
+                border-radius: 40px;
+            }
+            /*Magnifying glass for the search bar*/
+            .mg_icon{
+                width: 20px;
+                height: 20px;
+                top: 10px;
+                left: 12px;
+                position: absolute;
+            }
+            .search_buttons{
+                display: flex;
+                justify-content: center;
+                margin-top: 18px;
+            }
+            .btn{
+                display: block;
+                text-align: center;
+                background-color: #f2f2f2;
+                border: 1px solid #f2f2f2;
+                color: #5F6368;
+                margin: 11px 4px;
+                padding: 0px 16px 0px 16px;
+                height: 36px;
+                line-height: 27px;
+                font-size: 14px;
+            }
+            #bottom-nav{
+                list-style-type: none;
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                margin: -8px;
+                padding: 0px;
+                font-family: Arial, Helvetica;
+                font-size: 13px;
+                background-color: #f2f2f2;
+            }
+
+        </style>
+        <header>
+            <nav>
+                <div id="nav-header">
+                    <ul id="top-nav">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#store">Store</a></li>
+                        <li id= "sign_in"><a href="#sign-in">Sign in</a></li>
+                        <li style="float:right;"><a href="#google-apps"><img src="https://cdn3.iconfinder.com/data/icons/navigation-and-settings/24/Material_icons-01-11-512.png" style="height: 20px; width:20px;" alt="Google apps icon"></a></li>
+                        <li style="float:right;"><a href="#gmail">Gmail</a></li>
+                        <li style="float:right;"><a href="#images">Images</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div id="google-logo">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="The Google Inc. logo" id="logo">
+            </div>
+            <div class="search_form">
+                <form class="search_box">
+                    <input type="text" value=""></input>
+                    <img class="mg_icon" src="https://cdn1.iconfinder.com/data/icons/hawcons/32/698627-icon-111-search-512.png">
+                    <div class="search_buttons">
+                        <button name="search-buttons" class="btn search" value="g-search">Google Search</button>
+                        <button name="search-buttons" class="btn lucky" value="lucky">I'm Feeling Lucky</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+    <footer>
+        <div id="footnav">
+            <ul id="bottom-nav">
+                <li><a href="#advertising">Advertising</a></li>
+                <li><a href="#business">Business</a></li>
+                <li><a href="#how-search-works">How Search Works</a></li>
+                <li style="float:right"><a href="#settings">Settings</a></li>
+                <li style="float:right"><a href="#terms">Terms</a></li>
+                <li style="float:right"><a href="#privacy">Privacy</a></li>
+            </ul>
+        </div>
+    </footer>
+</html>
